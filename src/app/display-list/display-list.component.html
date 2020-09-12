@@ -44,8 +44,13 @@ hi
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let purchase of arr">
+          <!-- <tr *ngFor="let purchase of arr">
             <td>{{purchase}}</td>
+          </tr> -->
+          <tr *ngFor="let x of data">
+            <td *ngFor="let y of x | keyvalue">
+              {{y.key}}:{{y.value}}
+            </td>
           </tr>
         </tbody>
       </table>
