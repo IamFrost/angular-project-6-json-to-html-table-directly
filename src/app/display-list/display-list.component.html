@@ -25,14 +25,12 @@ hi
 
 </head>
 
-<!-- class="text-left" -->
 
 <body>
   <button (click)="dd()">fetch</button>
   <div class="container-fluid">
     <div class="table-responsive">
       <table id="purchaseTable" class="table table-hover table-bordered table-sm">
-        <!-- <caption>List of users</caption> -->
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -44,9 +42,6 @@ hi
           </tr>
         </thead>
         <tbody>
-          <!-- <tr *ngFor="let purchase of arr">
-            <td>{{purchase}}</td>
-          </tr> -->
           <tr *ngFor="let x of data">
             <td *ngFor="let y of x | keyvalue">
               {{y.key}}:{{y.value}}
@@ -55,9 +50,6 @@ hi
         </tbody>
       </table>
     </div>
-
-
   </div>
 </body>
-
 </html>
